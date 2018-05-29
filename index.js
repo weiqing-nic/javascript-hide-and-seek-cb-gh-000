@@ -13,15 +13,15 @@ function increaseRankBy(n){
     ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n;
   }
 }
-
 function deepestChild(){
-  var element = document.querySelector('div #grand-node');
+  var elem = document.querySelector('div#grand-node');
 
-  while(true){
-    var next = element.querySelector('div')
-    if(next === null){
-      return element;
+  while (true){
+    var next = elem.querySelector('div');
+    if (!next){
+      return elem;
     }
-    element = next;
+    elem = next;
   }
+
 }
