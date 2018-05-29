@@ -20,8 +20,8 @@ function deepestChild(){
   while(true){
     var next = elem.querySelector('div')
     if(!next){
-      return elem;
+      return element;
     }
-    elem = next;
+    element = next;
   }
 }
