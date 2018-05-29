@@ -19,7 +19,7 @@ function deepestChild(){
 
   while(true){
     var next = element.querySelector('div')
-    if(!next){
+    if(next === null){
       return element;
     }
     element = next;
